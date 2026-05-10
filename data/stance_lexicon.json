@@ -1,0 +1,56 @@
+{
+  "stance_indicators": {
+    "strongly_support": {
+      "zh": ["坚决支持", "完全赞同", "全力拥护", "绝对拥护", "坚定不移", "毫无保留", "100%支持", "全力支持", "强烈支持", "由衷支持"],
+      "en": ["strongly support", "fully endorse", "completely agree", "absolutely", "unequivocally", "unreservedly", "wholeheartedly", "firmly believe"]
+    },
+    "support": {
+      "zh": ["支持", "赞同", "同意", "认可", "肯定", "看好", "鼓励", "拥护", "赞成", "理解并支持"],
+      "en": ["support", "agree", "endorse", "approve", "favor", "positive view", "in favor of", "back"]
+    },
+    "neutral": {
+      "zh": ["不确定", "不好说", "不知道", "没意见", "保持中立", "不评论", "不发表看法", "不持立场"],
+      "en": ["neutral", "undecided", "not sure", "no opinion", "no comment", "take no position", "reserve judgment"]
+    },
+    "oppose": {
+      "zh": ["反对", "不同意", "不赞同", "不认可", "不看好", "质疑", "存疑", "有保留", "持保留意见"],
+      "en": ["oppose", "disagree", "against", "not in favor of", "object to", "question", "skeptical of"]
+    },
+    "strongly_oppose": {
+      "zh": ["坚决反对", "强烈反对", "完全不同意", "严正反对", "绝不容忍", "严词谴责", "明确反对", "强烈谴责"],
+      "en": ["strongly oppose", "firmly against", "completely disagree", "vehemently oppose", "condemn", "denounce", "categorically reject"]
+    },
+    "evasive": {
+      "zh": ["不予置评", "不方便回答", "不想多谈", "暂时不便回应", "不适合讨论", "无可奉告", "跳过这个问题"],
+      "en": ["no comment", "not appropriate to discuss", "rather not say", "pass on that", "skip that question", "decline to answer"]
+    }
+  },
+  "commitment_verbs": {
+    "strong": {
+      "zh": ["保证", "承诺", "发誓", "担保", "确保", "一定", "绝对", "绝不", "必定"],
+      "en": ["promise", "guarantee", "swear", "assure", "pledge", "commit", "vow", "undertake"]
+    },
+    "moderate": {
+      "zh": ["争取", "努力", "尽力", "力求", "致力于", "希望", "计划"],
+      "en": ["try to", "aim to", "strive to", "endeavor to", "plan to", "hope to", "intend to"]
+    },
+    "weak": {
+      "zh": ["考虑", "研究", "酝酿", "探讨", "视情况", "不排除"],
+      "en": ["consider", "explore", "look into", "review", "evaluate", "assess"]
+    }
+  },
+  "temporal_markers": {
+    "past": {
+      "zh": ["曾经", "过去", "以前", "之前", "当年", "那时候", "此前", "此前"],
+      "en": ["previously", "in the past", "formerly", "before", "earlier", "historically"]
+    },
+    "present": {
+      "zh": ["现在", "当前", "目前", "如今", "现今", "当下", "此刻"],
+      "en": ["currently", "presently", "now", "today", "at present", "at this point"]
+    },
+    "future": {
+      "zh": ["未来", "将来", "以后", "今后", "即将", "接下来", "下一步", "往后"],
+      "en": ["future", "upcoming", "next", "going forward", "in the future", "moving forward"]
+    }
+  }
+}
