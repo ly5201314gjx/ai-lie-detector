@@ -1,0 +1,106 @@
+{
+  "media_tiers": {
+    "tier_1": {
+      "label": "高度可信",
+      "score_range": [0.85, 1.0],
+      "examples_zh": [
+        "新华社", "人民日报", "央视新闻", "环球时报",
+        "财新网", "财经杂志", "南方周末",
+        "澎湃新闻", "新京报",
+        "36氪", "虎嗅", "晚点LatePost"
+      ],
+      "examples_en": [
+        "Reuters", "Associated Press", "BBC News",
+        "The Guardian", "The Wall Street Journal",
+        "Financial Times", "Bloomberg",
+        "The New York Times", "The Washington Post"
+      ],
+      "characteristics": [
+        "有明确定稿/审稿流程",
+        "有事实核查部门",
+        "有公开发布的编辑准则",
+        "记者有专业资质认证"
+      ]
+    },
+    "tier_2": {
+      "label": "中等可信",
+      "score_range": [0.65, 0.85],
+      "examples_zh": [
+        "腾讯新闻", "网易新闻", "搜狐新闻",
+        "新浪娱乐", "凤凰网", "观察者网",
+        "界面新闻", "每日经济新闻",
+        "中国经营报", "经济观察报"
+      ],
+      "examples_en": [
+        "CNN", "Fox News", "NBC News",
+        "ABC News", "CBS News",
+        "USA Today", "The Independent",
+        "The Telegraph"
+      ],
+      "characteristics": [
+        "有基本的编辑流程",
+        "可能存在一定偏向性",
+        "新闻和评论未完全分离",
+        "多为商业媒体"
+      ]
+    },
+    "tier_3": {
+      "label": "低可信",
+      "score_range": [0.40, 0.65],
+      "examples_zh": [
+        "头条号", "百家号", "大风号",
+        "个人微信公众号文章",
+        "一般自媒体",
+        "抖音/B站个人博主"
+      ],
+      "examples_en": [
+        "BuzzFeed News",
+        "Daily Mail",
+        "The Sun",
+        "The Daily Express",
+        "Infowars",
+        "Breitbart"
+      ],
+      "characteristics": [
+        "缺失完整编辑审核流程",
+        "可能存在明显偏见",
+        "消息源不透明",
+        "缺乏专业记者资质"
+      ]
+    },
+    "tier_4": {
+      "label": "不可信/待验证",
+      "score_range": [0.0, 0.4],
+      "examples_zh": [
+        "未认证社交媒体账号",
+        "匿名爆料",
+        "论坛帖子",
+        "网络传言",
+        "小道消息"
+      ],
+      "examples_en": [
+        "Unverified social media accounts",
+        "Anonymous forums",
+        "Conspiracy theory websites",
+        "Clickbait farms"
+      ],
+      "characteristics": [
+        "无任何编辑审核",
+        "目的不透明",
+        "常用于传播虚假信息",
+        "无法追溯来源"
+      ]
+    }
+  },
+  "domain_overrides": {
+    "gov.cn": 0.95,
+    "edu.cn": 0.90,
+    "org.cn": 0.80,
+    "ac.cn": 0.90,
+    "weibo.com": 0.50,
+    "zhihu.com": 0.55,
+    "douban.com": 0.50,
+    "bilibili.com": 0.45,
+    "xiaohongshu.com": 0.40
+  }
+}
