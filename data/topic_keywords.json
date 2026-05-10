@@ -1,0 +1,82 @@
+{
+  "topic_categories": {
+    "policy_stance": {
+      "zh_keywords": ["政策", "法规", "规定", "制度", "改革", "监管", "治理", "管理", "调控"],
+      "en_keywords": ["policy", "regulation", "law", "rule", "reform", "governance", "compliance"]
+    },
+    "financial_disclosure": {
+      "zh_keywords": ["收入", "资产", "投资", "财报", "利润", "营收", "亏损", "融资", "估值"],
+      "en_keywords": ["revenue", "profit", "investment", "valuation", "funding", "earnings", "finance"]
+    },
+    "corporate_strategy": {
+      "zh_keywords": ["战略", "方向", "布局", "转型", "升级", "计划", "目标", "愿景", "未来"],
+      "en_keywords": ["strategy", "direction", "vision", "mission", "plan", "goal", "roadmap", "future"]
+    },
+    "product_quality": {
+      "zh_keywords": ["质量", "安全", "性能", "缺陷", "故障", "售后", "品控", "测试", "标准"],
+      "en_keywords": ["quality", "safety", "performance", "defect", "recall", "standard", "certification"]
+    },
+    "personal_conduct": {
+      "zh_keywords": ["个人", "行为", "作风", "品德", "道德", "素养", "态度", "形象"],
+      "en_keywords": ["personal", "behavior", "conduct", "ethics", "integrity", "character", "reputation"]
+    },
+    "political_position": {
+      "zh_keywords": ["政治", "立场", "观点", "态度", "支持", "反对", "主张", "看法", "意见"],
+      "en_keywords": ["political", "position", "stance", "view", "opinion", "support", "oppose"]
+    },
+    "tech_innovation": {
+      "zh_keywords": ["技术", "创新", "研发", "专利", "突破", "领先", "算法", "人工智能", "AI"],
+      "en_keywords": ["technology", "innovation", "R&D", "patent", "breakthrough", "AI", "algorithm"]
+    },
+    "social_responsibility": {
+      "zh_keywords": ["公益", "慈善", "捐赠", "环保", "社会责任", "可持续发展", "ESG"],
+      "en_keywords": ["charity", "donation", "environment", "social responsibility", "ESG", "sustainability"]
+    },
+    "competitor_relations": {
+      "zh_keywords": ["竞争", "对手", "竞争关系", "市场份额", "行业地位", "对标", "超越"],
+      "en_keywords": ["competition", "competitor", "rival", "market share", "industry position", "benchmark"]
+    },
+    "legal_compliance": {
+      "zh_keywords": ["法律", "诉讼", "纠纷", "仲裁", "和解", "赔偿", "调查", "合规"],
+      "en_keywords": ["legal", "lawsuit", "litigation", "arbitration", "settlement", "investigation", "compliance"]
+    },
+    "career_development": {
+      "zh_keywords": ["职业", "发展", "规划", "转型", "突破", "瓶颈", "成长", "进步", "突破"],
+      "en_keywords": ["career", "development", "growth", "transition", "breakthrough", "progress", "evolution"]
+    },
+    "artistic_vision": {
+      "zh_keywords": ["艺术", "创作", "作品", "审美", "风格", "表达", "灵感", "理念", "追求"],
+      "en_keywords": ["art", "creation", "work", "aesthetic", "style", "expression", "inspiration", "vision"]
+    },
+    "public_controversy": {
+      "zh_keywords": ["争议", "道歉", "回应", "澄清", "误会", "指责", "批评", "舆论", "风波"],
+      "en_keywords": ["controversy", "apology", "response", "clarification", "misunderstanding", "criticism", "scandal"]
+    },
+    "market_performance": {
+      "zh_keywords": ["票房", "收视率", "销量", "数据", "成绩", "表现", "增长", "下滑"],
+      "en_keywords": ["box office", "ratings", "sales", "performance", "growth", "decline", "data"]
+    },
+    "team_collaboration": {
+      "zh_keywords": ["团队", "合作", "伙伴", "协作", "默契", "关系", "配合", "联动"],
+      "en_keywords": ["team", "collaboration", "partner", "cooperation", "relationship", "synergy"]
+    }
+  },
+
+  "subtopic_patterns": {
+    "technology_ai_safety": {
+      "parent": "tech_innovation",
+      "zh_keywords": ["AI安全", "人工智能风险", "技术伦理", "AI监管", "人工通用智能"],
+      "en_keywords": ["AI safety", "AI risk", "AI ethics", "AI regulation", "AGI", "artificial general intelligence"]
+    },
+    "finance_ipo": {
+      "parent": "financial_disclosure",
+      "zh_keywords": ["上市", "IPO", "上市计划", "上市时间表", "IPO计划"],
+      "en_keywords": ["IPO", "public offering", "going public", "listing"]
+    },
+    "career_transition": {
+      "parent": "career_development",
+      "zh_keywords": ["转型", "突破", "挑战新角色", "拓宽戏路", "改变风格"],
+      "en_keywords": ["transition", "pivot", "reinvention", "new direction"]
+    }
+  }
+}
