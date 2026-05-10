@@ -1,0 +1,174 @@
+{
+  "skill": {
+    "name": "AI测谎仪"
+    "version": "2.0.0",
+    "author": "AI Assistant 乡!",
+    "description": "AI测谎仪 v2.0 - 公众人物言论一致性验证与矛盾检测系统。新增KNN立场分类、矛盾交叉验证矩阵、事件知识图谱、红队对抗检测、说谎者网络、贝叶斯评分。",
+    "category": ["analysis", "verification", "journalism", "research", "nlp", "adversarial"],
+    "tags": ["fact-check", "consistency", "contradiction", "lie-detection", "public-figure", "timeline", "stance-analysis", "media-monitor", "deception-detection", "red-team", "bayesian", "knowledge-graph"],
+    "created_at": "2026-05-10",
+    "updated_at": "2026-05-10",
+    "version_history": [
+      {"v1.0.0": "基础言论采集+6轮矛盾检测+语言分析+报告生成"},
+      {"v2.0.0": "KNN小样本立场分类+矛盾交叉验证矩阵+事件知识图谱注入+红队对抗检测+说谎者网络+贝叶斯置信区间评分"}
+    ]
+  },
+
+  "algorithms": {
+    "knn_stance_classifier": {
+      "version": "2.0",
+      "method": "prototype_pool_knn",
+      "max_prototypes": 500,
+      "k_neighbors": 5,
+      "confidence_weights": {"knn_match": 0.7, "keyword_fallback": 0.4, "sentiment_fallback": 0.3},
+      "evasion_detection": true,
+      "prototype_persistence": true,
+      "retrain_on_correction": true
+    },
+    "contradiction_matrix": {
+      "version": "2.0",
+      "method": "6x6_cross_validation",
+      "syndrome_clustering": true,
+      "merge_threshold": 0.4,
+      "severity_boost_for_syndrome": 1.15,
+      "cross_pass_insights": true,
+      "template_matching": {
+        "1-2": "非偶然性矛盾",
+        "1-3": "场合性双标",
+        "2-3": "立场随受众漂移",
+        "5-6": "空洞承诺模式"
+      }
+    },
+    "event_knowledge_graph": {
+      "version": "2.0",
+      "event_types": ["legal", "financial", "product", "scandal", "milestone", "personnel"],
+      "time_window_days": 30,
+      "max_justification": 0.8,
+      "auto_discovery": true
+    },
+    "adversarial_red_team": {
+      "version": "2.0",
+      "attack_types": ["flip_flop", "promise_broken", "controversy", "fact_check", "compare_statement"],
+      "opposite_pairs": 15,
+      "severity_mapping": {"self_contradiction": 0.9, "exposed_lie": 0.95, "promise_failure": 0.8}
+    },
+    "network_analyzer": {
+      "version": "2.0",
+      "relation_types": ["collaborator", "competitor", "spokesperson", "superior", "subordinate", "family"],
+      "min_co_occurrence": 2,
+      "cross_validation_detailed": true
+    },
+    "bayesian_scoring": {
+      "version": "2.0",
+      "method": "bayesian_posterior_estimate",
+      "prior_distribution": "normal(65, 15)",
+      "confidence_interval": 0.90,
+      "posterior_samples": 1000,
+      "min_statements_for_reliable": 10,
+      "reporting": "score(ci_lower-ci_upper)"
+    },
+    "intent_analyzer": {
+      "version": "1.0",
+      "method": "keyword_rules",
+      "stances": ["strongly_support", "support", "neutral", "oppose", "strongly_oppose", "evasive", "ambiguous"]
+    },
+    "temporal_annotator": {
+      "version": "1.0",
+      "granularity_levels": ["exact_date", "month", "quarter", "year", "era"],
+      "max_gap_warning_days": 180
+    },
+    "linguistic_analyzer": {
+      "version": "1.0",
+      "dimensions": {
+        "hedging_weight": 0.25,
+        "vagueness_weight": 0.20,
+        "deflection_weight": 0.15,
+        "emotional_arousal": 0.10,
+        "detail_richness": 0.15,
+        "personal_pronoun_ratio": 0.10,
+        "cognitive_process_words": 0.05
+      }
+    },
+    "source_reliability_scorer": {
+      "version": "1.0",
+      "tier_1_threshold": 0.85,
+      "tier_2_threshold": 0.65,
+      "tier_3_threshold": 0.40
+    }
+  },
+
+  "configurations": {
+    "defaults": {
+      "max_statements_analyze": 200,
+      "time_range_months": 36,
+      "output_depth": "standard",
+      "include_linguistic_analysis": true,
+      "include_context_notes": true,
+      "include_red_team": true,
+      "include_network_analysis": false,
+      "cross_language_search": true,
+      "bayesian_confidence": true,
+      "sources": ["interview", "social_media", "press_conference", "official_statement", "public_speech", "documentary", "podcast"],
+      "auto_source_detection": true,
+      "dedup_threshold_seconds": 86400,
+      "parallel_search_engines": 3
+    },
+    "output_formats": {
+      "quick_scan": "快速扫描模式",
+      "standard": "标准模式（含矛盾+语言+评分）",
+      "full_report": "完整报告（含事件注入+红队结果+网络分析）",
+      "comparison_matrix": "对比矩阵模式",
+      "red_team": "红队攻击专项报告"
+    },
+    "logging": {
+      "level": "INFO",
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+      "file": "lie_detector_ai.log"
+    }
+  },
+
+  "dependencies": {
+    "required_packages": [
+      "google_search",
+      "duckduckgo",
+      "various_search",
+      "tavily",
+      "extended_http_tools",
+      "code_runner",
+      "extended_file_tools",
+      "browser"
+    ],
+    "python_packages": [
+      "numpy>=1.24.0",
+      "scikit-learn>=1.3.0",
+      "nltk>=3.8.0",
+      "jieba>=0.42.1",
+      "networkx>=3.0",
+      "scipy>=1.10.0",
+      "dateutil>=2.8.0"
+    ]
+  },
+
+  "examples": {
+    "quick_scan": {
+      "description": "快速扫描（含红队对抗检测）",
+      "command": "快速扫描刘浩存近2年关于演技转型的言论一致性，开启红队模式"
+    },
+    "full_report": {
+      "description": "完整分析（含贝叶斯置信区间+事件注入）",
+      "command": "全面分析马斯科关于AI安全立场的言论一致性，输出full_report，开启贝叶斯评分"
+    },
+    "red_team": {
+      "description": "红队对抗专项",
+      "command": "红队扫描刘浩存的公开言论，找前后矛盾"
+    },
+    "network": {
+      "description": "说谎者网络分析",
+      "command": "分析余承东的关系网络，交叉验证他和小米的言论"
+    },
+    "event_analysis": {
+      "description": "事件驱动分析（知识图谱注入）",
+      "command": "分析刘浩存2021年父母事件前后的公开言论变化，注入外部事件"
+    }
+  }
+}
