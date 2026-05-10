@@ -1,0 +1,138 @@
+{
+  "deception_patterns": {
+    "non_answer_evasion": {
+      "zh": [
+        "这个问题问得好",
+        "这要看情况",
+        "不能简单说",
+        "话题比较复杂",
+        "需要具体分析",
+        "不予置评",
+        "不方便回答",
+        "不想多谈",
+        "没听说过这件事",
+        "我不记得了",
+        "不了解具体情况",
+        "这个你应该问XX",
+        "我更想说的是",
+        "我们更应该关注",
+        "重点不在于此",
+        "我觉得你这个问题本身就有问题",
+        "我们不要纠缠于这个词",
+        "每个人都有不同的看法",
+        "我不想评论",
+        "暂时不便回应",
+        "将适时公布",
+        "时机成熟会告诉大家",
+        "到时候你们就知道了",
+        "这个我不能透露",
+        "这是内部事务",
+        "涉及商业机密",
+        "暂时无可奉告"
+      ],
+      "en": [
+        "that's a great question",
+        "let me be clear",
+        "frankly speaking",
+        "honestly",
+        "to be perfectly honest",
+        "with all due respect",
+        "no comment",
+        "I don't recall",
+        "I don't remember",
+        "I'd rather not discuss that",
+        "I'm not going to comment on that",
+        "I think the real question is",
+        "what's important here is",
+        "let me put it this way",
+        "that's not accurate",
+        "I haven't seen that report",
+        "you're taking that out of context",
+        "that's a mischaracterization",
+        "I stand by my previous statement",
+        "we'll have to wait and see",
+        "it's complicated",
+        "it depends",
+        "I'm not aware of that",
+        "I'd need to look into that",
+        "let me get back to you on that"
+      ]
+    },
+    "hedging_phrases": {
+      "zh": [
+        "可能", "也许", "大概", "似乎", "好像", "差不多",
+        "基本", "基本上", "一般来说", "通常情况下",
+        "某种意义上", "某种程度上", "总体而言", "相对而言",
+        "一定的", "一定的程度上", "有点", "稍微",
+        "据我所知", "据我了解", "听说", "据说", "谣传",
+        "我认为", "我个人认为", "在我看来", "我觉得",
+        "某种程度", "可以这么说", "算是吧",
+        "几乎", "近乎", "一定程度", "有限度的",
+        "相关方面", "有关部门", "相关人士",
+        "普遍认为", "外界认为", "坊间传闻"
+      ],
+      "en": [
+        "maybe", "perhaps", "probably", "possibly", "somewhat",
+        "basically", "essentially", "generally", "relatively",
+        "sort of", "kind of", "like", "mostly", "often", "frequently",
+        "allegedly", "reportedly", "purportedly", "supposedly",
+        "to some extent", "in some ways", "it seems", "it appears",
+        "I think", "I believe", "in my opinion", "to my knowledge",
+        "as far as I know", "I'm not entirely sure",
+        "for the most part", "in most cases", "typically",
+        "virtually", "nearly", "almost", "practically",
+        "a certain degree", "to a certain extent"
+      ]
+    },
+    "deflection_strategies": {
+      "attack_question": {
+        "zh": ["你这个问题本身就有问题", "你误解了", "你断章取义", "你的前提不对"],
+        "en": ["that question is misleading", "you're misrepresenting", "the premise is wrong"]
+      },
+      "redirect_blame": {
+        "zh": ["应该去问XX", "这是XX的责任", "不在我的职责范围内"],
+        "en": ["you should ask X", "that's not my department", "I'm not responsible for that"]
+      },
+      "whataboutism": {
+        "zh": ["那XX呢", "为什么不去问XX", "XX也做了同样的事"],
+        "en": ["what about X", "why don't you ask X", "X did the same thing"]
+      },
+      "virtue_signaling": {
+        "zh": ["我一向重视", "我始终坚信", "我的原则是"],
+        "en": ["I've always believed", "my principle has always been", "I've consistently"]
+      },
+      "future_promising": {
+        "zh": ["未来会更好", "将会有措施", "正在推进中", "很快就会公布"],
+        "en": ["we'll do better", "measures will be taken", "it's in progress", "soon to be announced"]
+      },
+      "minimization": {
+        "zh": ["没那么严重", "被夸大了", "小范围事件", "个别现象"],
+        "en": ["it's not that serious", "it's been exaggerated", "isolated incident"]
+      }
+    },
+    "temporal_evasion": {
+      "vague_timeframes": {
+        "zh": ["最近", "不久前", "以前", "之前", "很早", "以前的事"],
+        "en": ["recently", "not long ago", "previously", "before", "a while ago"]
+      },
+      "future_hedging": {
+        "zh": ["尽快", "择机", "适时", "在适当的时候", "条件成熟时"],
+        "en": ["as soon as possible", "when appropriate", "in due course", "at the right time"]
+      }
+    },
+    "linguistic_markers": {
+      "excessive_politeness": {
+        "zh": ["抱歉", "对不起", "不好意思", "非常抱歉", "深感歉意", "敬请谅解"],
+        "en": ["sorry", "apologize", "regret", "deeply sorry", "my apologies"]
+      },
+      "distancing_language": {
+        "zh": ["所谓的", "据称", "标榜的", "自称的"],
+        "en": ["so-called", "alleged", "self-proclaimed", "purported"]
+      },
+      "passive_voice": {
+        "zh_patterns": ["被", "受到", "遭到", "得以", "予以", "给予"],
+        "en_patterns": ["was done", "was made", "was taken", "it was decided"]
+      }
+    }
+  }
+}
